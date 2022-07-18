@@ -14,6 +14,9 @@ xargs -d '\n' mkdir -p -- < list.txt
 for dir in *; do (cd "$dir" && <<<do something else>>>); done
 
 
+cat File.txt | rev | cut -d "." -f 1,2 | rev | sort -u
+
+
 
 
 
